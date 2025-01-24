@@ -42,7 +42,7 @@ POST http://localhost:8000/api/token/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "username": "admin",
+    "username": "saga",
     "password": "test"
 }
 
@@ -57,3 +57,12 @@ Content-Type: application/json
 ###
 GET http://localhost:8000/user-orders/ HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzI2MDYwLCJpYXQiOjE3Mzc3MjU3NjAsImp0aSI6ImI5ZTYxMDczZGYzZTQwODNiN2NlMWIzMTAwYzdjOTUyIiwidXNlcl9pZCI6MX0.k3e1pXpIETkKVX9yuu-SuVpn3mnpGHBaj6YNC9afxkg
+
+
+###
+GET http://localhost:8000/orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzM4NTE5LCJpYXQiOjE3Mzc3MzgyMTksImp0aSI6IjMzNTQ4ZTdjYTg1NDQ0YmQ4OGM1MmEzODZhYmY5NDA1IiwidXNlcl9pZCI6MX0.4X5O36dzjekeVeSL6_Ff0aSQfKqYVlPdzRLC-eUr22c
+
+###
+GET http://localhost:8000/orders/111da90e-6c53-4842-86db-ad205201c02e HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzM4NjY0LCJpYXQiOjE3Mzc3MzgzNjQsImp0aSI6IjZkZjMxYTk5ZDM1ODQ2NjU4NzYxOWNkYjNlOGVkY2JiIiwidXNlcl9pZCI6Mn0.hDoEavJnMkwwZExIoaZjxsif9IZ5AuVcwU0wXKNE9Q4

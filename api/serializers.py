@@ -40,6 +40,7 @@ class OrderItemSerilizer(serializers.ModelSerializer):
         )
     
 class OrderSerializer(serializers.ModelSerializer):
+    order_id = serializers.UUIDField(read_only = True)
     items = OrderItemSerilizer(many = True, read_only = True)
     total_prize = serializers.SerializerMethodField(method_name='total')
 
