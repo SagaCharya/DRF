@@ -42,7 +42,7 @@ POST http://localhost:8000/api/token/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "username": "saga",
+    "username": "admin",
     "password": "test"
 }
 
@@ -65,17 +65,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 POST http://localhost:8000/orders/ HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzkzMDM0LCJpYXQiOjE3Mzc3OTI3MzQsImp0aSI6ImQxZmVlNjJlYWQ2NTQ1MjhhNTI1NGRjZDM2NTRjZmY0IiwidXNlcl9pZCI6Mn0.3_KgO1HfoZ1RXdvNGGTzybfqf2djXWjVC1tCXEiDQww
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMTQxNDY0LCJpYXQiOjE3NDIxMzc4NjQsImp0aSI6IjU4ODI4NDY4YjFhZjQwZTE5NTg2OTI3YjRmMjYwYWM1IiwidXNlcl9pZCI6MX0.v-XT7ijMt5j659EhEex33qfua_g-ib6kh1CZOTeEz6M
 
 {
   "status": "Pending",
   "items": [
     {
-      "product": 7,
+      "product": 1,
       "quantity": 1
     },
     {
-      "product": 8,
+      "product": 2,
       "quantity": 2
     }
   ]

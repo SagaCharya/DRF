@@ -26,7 +26,7 @@ class ProductSerializer(serializers.ModelSerializer):
         )
     
     def validate_stock(self, value):
-        if value == '':  # Handle empty string
+        if value is None or value == '':  # Handle empty string
             return 0
         if not isinstance(value, int) or value < 0:
             raise serializers.ValidationError("Stock must be a non-negative integer.")
